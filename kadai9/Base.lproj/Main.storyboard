@@ -35,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="入力"/>
                                 <connections>
-                                    <segue destination="CTp-Vn-woF" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" id="191-K4-mWb"/>
+                                    <segue destination="CTp-Vn-woF" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" id="hzL-Qa-NVf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
+            <point key="canvasLocation" x="93" y="88"/>
         </scene>
         <!--Item-->
         <scene sceneID="fs2-et-6K6">
@@ -63,7 +63,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="東京都"/>
                                 <connections>
-                                    <action selector="pressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="99g-2H-gS9"/>
+                                    <action selector="didPressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="03S-N4-MTY"/>
+                                    <segue destination="cAg-Je-8d3" kind="unwind" unwindAction="exitDoneWithSegue:" id="MGX-87-ge1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rk-UV-X0A">
@@ -71,7 +72,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="神奈川県"/>
                                 <connections>
-                                    <action selector="pressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="wEw-g3-pvJ"/>
+                                    <action selector="didPressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="9Pu-f0-Kks"/>
+                                    <segue destination="cAg-Je-8d3" kind="unwind" unwindAction="exitDoneWithSegue:" id="bIK-Lo-p9q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NZ-v0-RZQ">
@@ -79,7 +81,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="埼玉県"/>
                                 <connections>
-                                    <action selector="pressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="BXN-SA-oxq"/>
+                                    <action selector="didPressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="Rt7-vQ-GFK"/>
+                                    <segue destination="cAg-Je-8d3" kind="unwind" unwindAction="exitDoneWithSegue:" id="h7p-iu-n4F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HK-uL-TGU">
@@ -87,7 +90,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="千葉県"/>
                                 <connections>
-                                    <action selector="pressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="t8O-qa-GZ1"/>
+                                    <action selector="didPressButton:" destination="XSt-7k-w4d" eventType="touchUpInside" id="wLj-AD-rVm"/>
+                                    <segue destination="cAg-Je-8d3" kind="unwind" unwindAction="exitDoneWithSegue:" id="oEa-dB-UCA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,7 +102,7 @@
                     <navigationItem key="navigationItem" id="7cG-iA-5ov">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="i0S-0n-qnP">
                             <connections>
-                                <segue destination="cAg-Je-8d3" kind="unwind" unwindAction="exitWithSegue:" id="503-pd-zWh"/>
+                                <segue destination="cAg-Je-8d3" kind="unwind" unwindAction="exitWithSegue:" id="Dwc-tw-ke9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,7 +111,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XI-yi-CvL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="cAg-Je-8d3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1528" y="88"/>
+            <point key="canvasLocation" x="1583" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Sh-bq-Y7h">

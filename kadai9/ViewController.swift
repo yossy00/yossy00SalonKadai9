@@ -9,7 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak private var resultLabel: UILabel!
+    
+    @IBAction func exitDone(segue:UIStoryboardSegue){
+        let nextVC = segue.source as? NextViewController
+        resultLabel.text = nextVC?.inputText
+    }
+    
     @IBAction func exit(segue:UIStoryboardSegue){
     }
 }
